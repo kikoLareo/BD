@@ -2,13 +2,6 @@ from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime  # I
 from sqlalchemy.orm import relationship
 from db.database import Base
 
-class SurfSession(Base):
-    __tablename__ = "surf_sessions"
-    id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer)
-    wave_height = Column(Float)
-    duration = Column(Float)
-
 class Role(Base):
     __tablename__ = "roles"
     id = Column(Integer, primary_key=True, index=True)
@@ -35,6 +28,7 @@ class User(Base):
     created_at = Column(DateTime)
     updated_at = Column(DateTime)
     roles = relationship("UserRole", back_populates="user")
+    assignments = relationship("ChampionshipAssignment", back_populates="user")
 
 
 class UserRole(Base):
@@ -52,3 +46,33 @@ class RolePermission(Base):
 
     role = relationship("Role", back_populates="permissions")
     permission = relationship("Permission", back_populates="roles")
+
+
+# Tabla de Campeonatos
+class Championship(Base):
+    __tablename__ = "championships"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True)
+    location = Column(String)
+    date = Column(DateTime)
+    assignments = relationship("ChampionshipAssignment", back_populates="championship")
+
+# Tabla de Puestos de Trabajo
+class JobPosition(Base):
+    __tablename__ = "job_positions"
+    id = Column(Integer, primary_key=True, index=True)
+    title = Column(String, unique=True, index=True)
+    description = Column(String)
+    assignments = relationship("ChampionshipAssignment", back_populates="job_position")
+
+# Tabla de Asignación de Usuarios a Campeonatos
+class ChampionshipAssignment(Base):
+    __tablename__ = "championship_assignments"
+    user_id = Column(Integer, ForeignKey("users.id"), primary_key=True)
+    championship_id = Column(Integer, ForeignKey("championships.id"), primary_key=True)
+    job_position_id = Column(Integer, ForeignKey("job_positions.id"))
+    hours_worked = Column(Float)
+
+    user = relationship("User", back_populates="assignments")
+    championship = relationship("Championship", back_populates="assignments")
+    job_position = relationship("JobPosition", back_populates="assignments")

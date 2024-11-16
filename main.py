@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from routers import users, roles, auth, logs
+from routers import users, roles, auth, logs, championships, jobs_position, assignments
 
 app = FastAPI()
 
@@ -18,6 +18,9 @@ app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(roles.router)
 app.include_router(logs.router)
+app.include_router(championships.router)
+app.include_router(jobs_position.router)
+app.include_router(assignments.router)
 
 @app.get("/")
 async def root():
