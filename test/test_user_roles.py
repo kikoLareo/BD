@@ -1,5 +1,5 @@
 from main import app
-from test.conftest import setup_database, client
+from BD.test.conftest import setup_database, client
 
 # Prueba para asignar rol a un usuario
 def test_assign_role_to_user(client,setup_database):

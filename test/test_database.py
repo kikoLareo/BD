@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-
 # Base de datos en memoria para pruebas
-SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
+#SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
+SQLALCHEMY_DATABASE_URL = "postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db"
 
 # Configuración del motor de la base de datos de prueba
 engine = create_engine(SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False})

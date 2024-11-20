@@ -5,14 +5,15 @@ from alembic import context
 import os
 
 # Importa el `Base` y los modelos
-from app.models.Base import Base  # Asegúrate de que este es el camino correcto a tus modelos
+from db.database import Base  # Asegúrate de que este es el camino correcto a tus modelos
+from models.models import *  # Importa todos los modelos
 
 # Cargar configuración de logging
 config = context.config
 fileConfig(config.config_file_name)
 
 # Configurar URL de la base de datos
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://wavesHub_user:WavesHub@localhost:5432/wavesHub_db")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db")
 config.set_main_option("sqlalchemy.url", DATABASE_URL)
 
 # Apuntar al `metadata` de `Base` para que Alembic lo reconozca

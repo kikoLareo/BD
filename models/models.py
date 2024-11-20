@@ -1,71 +1,75 @@
-from sqlalchemy import Column, Integer, String, Float, ForeignKey, DateTime  # Importa DateTime
+from sqlalchemy import Column, Date, Integer, String, ForeignKey, DateTime, Float, Table
 from sqlalchemy.orm import relationship
 from db.database import Base
 
-class Role(Base):
-    __tablename__ = "roles"
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, unique=True, index=True)
-    description = Column(String)
+# Tabla intermedia para la relación muchos-a-muchos entre roles y permisos
+role_permission_association = Table(
+    "role_permission_association",
+    Base.metadata,
+    Column("role_id", Integer, ForeignKey("roles.id"), primary_key=True),
+    Column("permission_id", Integer, ForeignKey("permissions.id"), primary_key=True)
+)
 
-    permissions = relationship("RolePermission", back_populates="role")
-    users = relationship("UserRole", back_populates="role")
-
-class Permission(Base):
-    __tablename__ = "permissions"
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, unique=True, index=True)
-    description = Column(String)
-
-    roles = relationship("RolePermission", back_populates="permission")
-
+# Modelo de Usuario
 class User(Base):
-    __tablename__ = 'users'
+    __tablename__ = "users"
     id = Column(Integer, primary_key=True, index=True)
-    username = Column(String, unique=True, index=True)
-    email = Column(String, unique=True, index=True)
-    password_hash = Column(String)
+    username = Column(String, unique=True, index=True, nullable=False)
+    email = Column(String, unique=True, index=True, nullable=False)
+    password_hash = Column(String, nullable=False)
     created_at = Column(DateTime)
     updated_at = Column(DateTime)
     roles = relationship("UserRole", back_populates="user")
     assignments = relationship("ChampionshipAssignment", back_populates="user")
 
+# Modelo de Rol
+class Role(Base):
+    __tablename__ = "roles"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True, nullable=False)
+    description = Column(String)
+    permissions = relationship("Permission", secondary=role_permission_association, back_populates="roles")
+    users = relationship("UserRole", back_populates="role")
 
+# Modelo de Permiso
+class Permission(Base):
+    __tablename__ = "permissions"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True, nullable=False)
+    description = Column(String)
+    roles = relationship("Role", secondary=role_permission_association, back_populates="permissions")
+
+# Tabla intermedia para la relación muchos-a-muchos entre usuarios y roles
 class UserRole(Base):
-    __tablename__ = 'user_roles'
-    user_id = Column(Integer, ForeignKey('users.id'), primary_key=True)
-    role_id = Column(Integer, ForeignKey('roles.id'), primary_key=True)
+    __tablename__ = "user_roles"
+    user_id = Column(Integer, ForeignKey("users.id"), primary_key=True)
+    role_id = Column(Integer, ForeignKey("roles.id"), primary_key=True)
     user = relationship("User", back_populates="roles")
     role = relationship("Role", back_populates="users")
 
-
-class RolePermission(Base):
-    __tablename__ = "role_permissions"
-    role_id = Column(Integer, ForeignKey("roles.id"), primary_key=True)
-    permission_id = Column(Integer, ForeignKey("permissions.id"), primary_key=True)
-
-    role = relationship("Role", back_populates="permissions")
-    permission = relationship("Permission", back_populates="roles")
-
-
-# Tabla de Campeonatos
 class Championship(Base):
     __tablename__ = "championships"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
     location = Column(String)
-    date = Column(DateTime)
+    start_date = Column(DateTime)
+    end_date = Column(DateTime)
+    organizer_id = Column(Integer, ForeignKey("organizers.id"))
+    discipline_id = Column(Integer, ForeignKey("disciplines.id"))  # Clave foránea añadida
+
+    organizer = relationship("Organizer", back_populates="championships")
+    discipline = relationship("Discipline", back_populates="championships")
     assignments = relationship("ChampionshipAssignment", back_populates="championship")
 
-# Tabla de Puestos de Trabajo
+# Modelo de Puesto de Trabajo
 class JobPosition(Base):
     __tablename__ = "job_positions"
     id = Column(Integer, primary_key=True, index=True)
-    title = Column(String, unique=True, index=True)
-    description = Column(String)
+    title = Column(String, unique=True, index=True, nullable=False)
+    description = Column(String, nullable=False)
     assignments = relationship("ChampionshipAssignment", back_populates="job_position")
 
-# Tabla de Asignación de Usuarios a Campeonatos
+# Modelo de Asignación de Usuarios a Campeonatos
 class ChampionshipAssignment(Base):
     __tablename__ = "championship_assignments"
     user_id = Column(Integer, ForeignKey("users.id"), primary_key=True)
@@ -76,3 +80,19 @@ class ChampionshipAssignment(Base):
     user = relationship("User", back_populates="assignments")
     championship = relationship("Championship", back_populates="assignments")
     job_position = relationship("JobPosition", back_populates="assignments")
+
+# Modelo de Organizador
+class Organizer(Base):
+    __tablename__ = "organizers"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True, nullable=False)
+    championships = relationship("Championship", back_populates="organizer")
+
+# Modelo de Disciplina
+class Discipline(Base):
+    __tablename__ = "disciplines"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, unique=True, index=True, nullable=False)
+    category = Column(String) 
+    championships = relationship("Championship", back_populates="discipline")
+

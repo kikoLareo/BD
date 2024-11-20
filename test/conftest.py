@@ -7,7 +7,7 @@ from fastapi.testclient import TestClient
 from main import app
 
 # Cambia la conexión para usar PostgreSQL y tu base de datos de prueba
-engine = create_engine("postgresql://postgres:WavesHub@localhost/test_db")
+engine = create_engine("postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db")
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
 # Fixture para crear y eliminar las tablas en la base de datos de prueba
