@@ -531,3 +531,7 @@
 {"timestamp": 1732133898.702154, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente"}
 {"timestamp": 1732133948.089088, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizador 'Vieja' creado exitosamente"}
 {"timestamp": 1732133948.0970418, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente"}
+{"timestamp": 1732278229.6331232, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente"}
+{"timestamp": 1732278229.639372, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente"}
+{"timestamp": 1732278229.644285, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente"}
+{"timestamp": 1732278229.6448472, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente"}
