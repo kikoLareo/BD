@@ -5,7 +5,7 @@ from db.database import get_db
 from schemas.user import UserCreate, UserResponse, UserUpdate
 from schemas.role import RoleResponse
 from logging_config import logger
-from utils.hash import hash_password
+from utils.hash import hash_password, verify_password
 from typing import List
 from db.CRUD.crud import create_new_user, get_all_users, update_user as update_user_crud, delete_user as delete_user_crud
 
@@ -27,7 +27,7 @@ async def create_user(user_data: UserCreate, db: Session = Depends(get_db)):
         hashed_password = hash_password(user_data.password)
 
         # Crear un nuevo usuario
-        new_user = create_new_user(db, user_data.name, user_data.email, hashed_password)
+        new_user = create_new_user(db, user_data.username, user_data.email, hashed_password)
         logger.info("Usuario creado exitosamente", extra={"component": "user_router", "user_id": new_user.id})
         return new_user
     except Exception as e:
@@ -45,19 +45,27 @@ async def get_users(db: Session = Depends(get_db)):
         logger.error(f"Error al obtener los usuarios: {e}")
         raise HTTPException(status_code=500, detail="Error interno del servidor")
 
-# Endpoint para actualizar un usuario
-@router.put("/{user_id}/update", response_model=UserResponse)
+
+@router.put("/{user_id}/update", response_model=User)
 async def update_user(user_id: int, user_data: UserUpdate, db: Session = Depends(get_db)):
-    try:
-        updated_user = update_user_crud(db, user_id, user_data.username, user_data.email)
-        logger.info(f"Usuario {updated_user.username} actualizado exitosamente")
-        return updated_user
-    except ValueError as ve:
-        logger.error(f"Error: {ve}")
-        raise HTTPException(status_code=404, detail=str(ve))
-    except Exception as e:
-        logger.error(f"Error al actualizar el usuario: {e}")
-        raise HTTPException(status_code=500, detail="Error interno del servidor")
+    user = db.query(User).filter(User.id == user_id).first()
+    if not user:
+        raise HTTPException(status_code=404, detail="Usuario no encontrado")
+
+    # Validar la contraseña actual
+    if not verify_password(user_data.currentPassword, user.password_hash):
+        raise HTTPException(status_code=400, detail="La contraseña actual es incorrecta")
+
+    # Actualizar contraseña si es necesario
+    if user_data.newPassword:
+        user.password_hash = hash_password(user_data.newPassword)
+
+    # Actualizar otros campos
+    user.username = user_data.username
+    user.email = user_data.email
+    db.commit()
+    return user
+
 
 # Endpoint para eliminar un usuario
 @router.delete("/{user_id}/delete")
