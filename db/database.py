@@ -5,7 +5,7 @@ import os
 from logging_config import logger
 
 Base = declarative_base()
-DATABASE_URL = os.environ.get('DATABASE_URL')
+DATABASE_URL = 'postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db'
 logger.info(f"DATABASE_URL: {DATABASE_URL}")
 
 engine = create_engine(DATABASE_URL,    echo=True )

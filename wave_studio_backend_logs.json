@@ -535,3 +535,123 @@
 {"timestamp": 1732278229.639372, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente"}
 {"timestamp": 1732278229.644285, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente"}
 {"timestamp": 1732278229.6448472, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente"}
+{"timestamp": 1732563274.3852959, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: None", "taskName": null}
+{"timestamp": 1732563434.574474, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: None", "taskName": null}
+{"timestamp": 1732563460.5711439, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732563465.352654, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732563465.35275, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732563465.352791, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732563465.3528168, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732563465.352841, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732563465.3528588, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732563465.3528771, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732563465.352895, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732563465.352912, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732563465.35293, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732563465.3529458, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732563465.352962, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732563491.802513, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732563491.919821, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732563491.919905, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732563491.9199538, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732563491.919978, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732563491.919998, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732563491.9200158, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732563491.920034, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732563491.9200509, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732563491.920068, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732563491.920084, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732563491.9201002, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732563491.920118, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567348.746283, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567349.148673, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567349.148749, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567349.148778, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "locations", "taskName": null}
+{"timestamp": 1732567349.148801, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567349.1488278, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732567349.148875, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567349.1489038, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567349.148926, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567349.1489542, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567349.1489742, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567349.148992, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567349.1490078, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567349.149025, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567351.455712, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567351.5396469, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567351.539724, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567351.539757, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "locations", "taskName": null}
+{"timestamp": 1732567351.5397818, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567351.539804, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732567351.539824, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567351.5398421, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567351.539861, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567351.5398788, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567351.5398982, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567351.539916, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567351.539934, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567351.539953, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567644.683271, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567644.867734, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567644.867828, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567644.867867, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "locations", "taskName": null}
+{"timestamp": 1732567644.867896, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567644.8679209, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732567644.867944, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567644.867967, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567644.867987, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567644.8680089, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567644.8680289, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567644.8680499, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567644.8680708, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567644.8680918, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567647.72512, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567647.8115258, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567647.811599, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567647.8116322, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "locations", "taskName": null}
+{"timestamp": 1732567647.811656, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567647.811678, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732567647.811698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567647.811717, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567647.811736, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567647.811754, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567647.811771, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567647.811788, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567647.811806, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567647.8118231, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567686.935311, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567687.0513349, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567687.051414, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567687.051448, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567687.051473, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": null}
+{"timestamp": 1732567687.0514948, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567687.051517, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567687.0515368, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567687.051556, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567687.051575, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567687.051593, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567687.051611, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567687.05163, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567748.794142, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567748.918449, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732567748.918527, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}
+{"timestamp": 1732567748.918562, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": null}
+{"timestamp": 1732567748.918587, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": null}
+{"timestamp": 1732567748.918609, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": null}
+{"timestamp": 1732567748.91863, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": null}
+{"timestamp": 1732567748.9186502, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": null}
+{"timestamp": 1732567748.9186711, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": null}
+{"timestamp": 1732567748.918689, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": null}
+{"timestamp": 1732567748.918708, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": null}
+{"timestamp": 1732567748.918727, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": null}
+{"timestamp": 1732567991.391885, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732567991.474706, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732568110.92089, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732568111.019234, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732568155.792178, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732568155.879242, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732568256.653134, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732568256.7324219, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732568261.6116962, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": null}
+{"timestamp": 1732568261.6876009, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": null}
+{"timestamp": 1732568261.687674, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": null}

@@ -10,7 +10,7 @@ from datetime import date
 # Esquema para crear un Campeonato
 class ChampionshipCreate(BaseModel):
     name: str
-    location: str
+    location: int
     organizer_id: Optional[str] = None  # Permitir nulo
     discipline: Optional[str] = None  # Permitir nulo
     start_date: Optional[date] = None  # Permitir nulo
