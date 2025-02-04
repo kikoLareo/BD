@@ -23,7 +23,7 @@ class UserUpdate(BaseModel):
     confirmPassword: Optional[str] = Field(None, description="Confirmar nueva contraseña")
 
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "username": "nuevo_usuario",
                 "email": "nuevo_email@example.com",

@@ -4,6 +4,7 @@ from sqlalchemy.orm import Session
 from db.database import get_db
 from models.models import User
 from schemas.pydantic import Token
+from utils.hash import verify_password
 
 router = APIRouter()
 

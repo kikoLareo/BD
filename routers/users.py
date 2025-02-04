@@ -7,12 +7,21 @@ from schemas.role import RoleResponse
 from logging_config import logger
 from utils.hash import hash_password, verify_password
 from typing import List
-from db.CRUD.crud import create_new_user, get_all_users, update_user as update_user_crud, delete_user as delete_user_crud
+from db.CRUD.crud import get_user, create_new_user, get_all_users, update_user as update_user_crud, delete_user as delete_user_crud
 
 router = APIRouter(
     prefix="/users",  # Prefijo para todas las rutas de este enrutador
     tags=["users"]
 )
+
+@router.get("/{user_id}", response_model=UserResponse)
+async def get_user(user_id: int, db: Session = Depends(get_db)):
+    user = get_user(db, user_id)
+    if not user:
+        logger.error(f"Usuario con ID {user_id} no encontrado")
+        raise HTTPException(status_code=404, detail="Usuario no encontrado")
+    return user
+
 
 # Endpoint para crear un nuevo usuario
 @router.post("/create", response_model=UserResponse)
@@ -46,7 +55,7 @@ async def get_users(db: Session = Depends(get_db)):
         raise HTTPException(status_code=500, detail="Error interno del servidor")
 
 
-@router.put("/{user_id}/update", response_model=User)
+@router.put("/{user_id}/update", response_model=UserResponse)
 async def update_user(user_id: int, user_data: UserUpdate, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
