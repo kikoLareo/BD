@@ -16,7 +16,7 @@ router = APIRouter(
 
 @router.get("/{user_id}", response_model=UserResponse)
 async def get_user(user_id: int, db: Session = Depends(get_db)):
-    user = get_user(db, user_id)
+    user = await get_user(db, user_id)
     if not user:
         logger.error(f"Usuario con ID {user_id} no encontrado")
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
