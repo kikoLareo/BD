@@ -15,7 +15,7 @@ router = APIRouter(
 )
 
 @router.get("/{user_id}", response_model=UserResponse)
-async def get_user(user_id: int, db: Session = Depends(get_db)):
+async def get_user_by_id(user_id: int, db: Session = Depends(get_db)):
     user = await get_user(db, user_id)
     if not user:
         logger.error(f"Usuario con ID {user_id} no encontrado")
