@@ -11,6 +11,7 @@ router = APIRouter(
     tags=["disciplines"]
 )
 
+
 # Obtener todas las disciplinas
 @router.get("/", response_model=List[DisciplineResponse])
 async def get_all_disciplines(db: Session = Depends(get_db)):

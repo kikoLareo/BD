@@ -4,12 +4,22 @@ from models.models import Role
 from schemas.role import RoleCreate, RoleResponse, RoleUpdate
 from db.database import get_db
 from logging_config import logger
-from db.CRUD.rolesCrud import get_all_roles, create_new_role
+from db.CRUD.rolesCrud import get_all_roles, create_new_role, get_role
 
 router = APIRouter(
     prefix="/roles",  # Prefijo para todas las rutas de este enrutador
     tags=["roles"]
 )
+
+
+@router.get("/{role_id}", response_model=RoleResponse)
+async def get_role_by_id(role_id: int, db: Session = Depends(get_db)):
+    role = get_role(db, role_id)
+    if not role:
+        logger.error(f"Rol no encontrado con ID {role_id}")
+        raise HTTPException(status_code=404, detail="Rol no encontrado")
+    return role
+
 
 # Endpoint para obtener todos los roles
 @router.get("", response_model=list[RoleResponse])

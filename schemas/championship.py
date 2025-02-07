@@ -11,8 +11,8 @@ from datetime import date
 class ChampionshipCreate(BaseModel):
     name: str
     location: int
-    organizer_id: Optional[str] = None  # Permitir nulo
-    discipline: Optional[str] = None  # Permitir nulo
+    organizer_id: Optional[int] = None  # Permitir nulo
+    discipline: Optional[int] = None  # Permitir nulo
     start_date: Optional[date] = None  # Permitir nulo
     end_date: Optional[date] = None  # Permitir nulo
 
@@ -37,5 +37,4 @@ class ChampionshipDetailResponse(BaseModel):
 
     class Config:
         orm_mode = True
-    class Config:
-        orm_mode = True
+

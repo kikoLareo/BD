@@ -10,7 +10,6 @@ def get_championship_by_id(db: Session, championship_id: int):
 
 def create_championship(db: Session, championship_data: ChampionshipCreate):
     # Usamos el esquema ChampionshipCreate para asegurarnos de que los datos sean válidos
-# Suponiendo que el esquema incluye más campos, como 'start_date', 'end_date', 'organizer', 'discipline', etc.
     new_championship = Championship(
         name=championship_data.name,
         location=championship_data.location,

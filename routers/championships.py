@@ -33,6 +33,7 @@ async def get_championship(championship_id: int, db: Session = Depends(get_db)):
 @router.post("/create", response_model=ChampionshipDetailResponse)
 async def create_new_championship(championship_data: ChampionshipCreate, db: Session = Depends(get_db)):
     try:
+        logger.info("Creando nuevo campeonato... 'name': {championship_data.name}")
         new_championship = create_championship(db, championship_data)
         logger.info(f"Campeonato '{new_championship.name}' creado exitosamente")
         return new_championship

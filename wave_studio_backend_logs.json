@@ -1118,3 +1118,352 @@
 {"timestamp": 1738693381.671805, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": "Task-1"}
 {"timestamp": 1738693385.5442, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-5"}
 {"timestamp": 1738693385.5592551, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-7"}
+{"timestamp": 1738693417.606843, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": "Task-1"}
+{"timestamp": 1738693417.708468, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": "Task-1"}
+{"timestamp": 1738693417.7085388, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": "Task-1"}
+{"timestamp": 1738693417.708572, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": "Task-1"}
+{"timestamp": 1738693417.708596, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": "Task-1"}
+{"timestamp": 1738693417.708617, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": "Task-1"}
+{"timestamp": 1738693417.708637, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": "Task-1"}
+{"timestamp": 1738693417.708656, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": "Task-1"}
+{"timestamp": 1738693417.7086751, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": "Task-1"}
+{"timestamp": 1738693417.708693, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": "Task-1"}
+{"timestamp": 1738693417.708711, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": "Task-1"}
+{"timestamp": 1738693417.708729, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": "Task-1"}
+{"timestamp": 1738693417.708748, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": "Task-1"}
+{"timestamp": 1738693421.248867, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-5"}
+{"timestamp": 1738693421.2535381, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-6"}
+{"timestamp": 1738693432.1228611, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-8"}
+{"timestamp": 1738693432.1235662, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-8"}
+{"timestamp": 1738693432.134241, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-10"}
+{"timestamp": 1738693432.1344151, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-10"}
+{"timestamp": 1738693433.3471, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-11"}
+{"timestamp": 1738693433.351507, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-12"}
+{"timestamp": 1738693435.4036238, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-14"}
+{"timestamp": 1738693435.4037771, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-14"}
+{"timestamp": 1738693435.409014, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-15"}
+{"timestamp": 1738693435.409164, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-15"}
+{"timestamp": 1738693455.446222, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-17"}
+{"timestamp": 1738693455.447375, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-17"}
+{"timestamp": 1738693455.460416, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-18"}
+{"timestamp": 1738693455.460565, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-18"}
+{"timestamp": 1738742430.345978, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-20"}
+{"timestamp": 1738742430.3482041, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-20"}
+{"timestamp": 1738742430.3608031, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-21"}
+{"timestamp": 1738742430.361115, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-21"}
+{"timestamp": 1738745590.131052, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-23"}
+{"timestamp": 1738745590.2510688, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-24"}
+{"timestamp": 1738745595.062164, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-26"}
+{"timestamp": 1738745595.0640619, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-26"}
+{"timestamp": 1738745595.0866199, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-27"}
+{"timestamp": 1738745595.086821, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-27"}
+{"timestamp": 1738773680.7218392, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-29"}
+{"timestamp": 1738773680.724415, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-29"}
+{"timestamp": 1738773680.7388532, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-30"}
+{"timestamp": 1738773680.738949, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-30"}
+{"timestamp": 1738775084.650097, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-32"}
+{"timestamp": 1738775084.657744, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-32"}
+{"timestamp": 1738775084.7077491, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-33"}
+{"timestamp": 1738775084.708024, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-33"}
+{"timestamp": 1738775090.3386052, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-35"}
+{"timestamp": 1738775090.355478, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-35"}
+{"timestamp": 1738775090.372405, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-36"}
+{"timestamp": 1738775090.37251, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-36"}
+{"timestamp": 1738775101.2402182, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-38"}
+{"timestamp": 1738775101.240833, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-38"}
+{"timestamp": 1738775101.250693, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-39"}
+{"timestamp": 1738775101.250824, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-39"}
+{"timestamp": 1738775305.263317, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-41"}
+{"timestamp": 1738775305.26466, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-41"}
+{"timestamp": 1738775305.276701, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-42"}
+{"timestamp": 1738775305.2768588, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-42"}
+{"timestamp": 1738779892.9803069, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-44"}
+{"timestamp": 1738779893.5539699, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-44"}
+{"timestamp": 1738779893.6373172, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-46"}
+{"timestamp": 1738779893.637465, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-46"}
+{"timestamp": 1738779894.3569121, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-48"}
+{"timestamp": 1738779894.3575659, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-48"}
+{"timestamp": 1738779894.370115, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-49"}
+{"timestamp": 1738779894.3704069, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-49"}
+{"timestamp": 1738783240.456672, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-51"}
+{"timestamp": 1738783240.476968, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-51"}
+{"timestamp": 1738783240.54844, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-52"}
+{"timestamp": 1738783240.5485, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-52"}
+{"timestamp": 1738829022.526996, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-54"}
+{"timestamp": 1738829022.5449789, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-54"}
+{"timestamp": 1738829022.595794, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-55"}
+{"timestamp": 1738829022.5958579, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-55"}
+{"timestamp": 1738859506.0924969, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-57"}
+{"timestamp": 1738859506.103544, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-57"}
+{"timestamp": 1738859506.163093, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-58"}
+{"timestamp": 1738859506.1633332, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-58"}
+{"timestamp": 1738868467.343891, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-60"}
+{"timestamp": 1738868467.3552058, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-60"}
+{"timestamp": 1738868467.4352891, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-62"}
+{"timestamp": 1738868467.435366, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-62"}
+{"timestamp": 1738923793.8109682, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-64"}
+{"timestamp": 1738923793.831466, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-64"}
+{"timestamp": 1738923793.890676, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-65"}
+{"timestamp": 1738923793.890751, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-65"}
+{"timestamp": 1738924148.2572339, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-67"}
+{"timestamp": 1738924148.266519, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-67"}
+{"timestamp": 1738924148.306016, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-68"}
+{"timestamp": 1738924148.3061278, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-68"}
+{"timestamp": 1738937726.751054, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": "Task-1"}
+{"timestamp": 1738937727.372761, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": "Task-1"}
+{"timestamp": 1738937727.3728871, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": "Task-1"}
+{"timestamp": 1738937727.3729339, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": "Task-1"}
+{"timestamp": 1738937727.372957, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": "Task-1"}
+{"timestamp": 1738937727.372988, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": "Task-1"}
+{"timestamp": 1738937727.3730261, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": "Task-1"}
+{"timestamp": 1738937727.373051, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": "Task-1"}
+{"timestamp": 1738937727.3730838, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": "Task-1"}
+{"timestamp": 1738937727.373107, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": "Task-1"}
+{"timestamp": 1738937727.373135, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": "Task-1"}
+{"timestamp": 1738937727.373186, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": "Task-1"}
+{"timestamp": 1738937727.3732219, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": "Task-1"}
+{"timestamp": 1738948602.122876, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-22"}
+{"timestamp": 1738948602.220944, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-23"}
+{"timestamp": 1738948604.4328341, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-24"}
+{"timestamp": 1738948604.438286, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-25"}
+{"timestamp": 1738948607.181565, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-27"}
+{"timestamp": 1738948607.181891, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-27"}
+{"timestamp": 1738948607.1907141, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-28"}
+{"timestamp": 1738948607.190917, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-28"}
+{"timestamp": 1738948608.9847648, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-29"}
+{"timestamp": 1738948608.985467, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-29"}
+{"timestamp": 1738948608.9900439, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-30"}
+{"timestamp": 1738948608.9901419, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-30"}
+{"timestamp": 1738948759.890332, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": "Task-1"}
+{"timestamp": 1738948760.216873, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": "Task-1"}
+{"timestamp": 1738948760.21695, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": "Task-1"}
+{"timestamp": 1738948760.216979, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": "Task-1"}
+{"timestamp": 1738948760.217001, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": "Task-1"}
+{"timestamp": 1738948760.2170198, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": "Task-1"}
+{"timestamp": 1738948760.2170382, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": "Task-1"}
+{"timestamp": 1738948760.217056, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": "Task-1"}
+{"timestamp": 1738948760.217073, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": "Task-1"}
+{"timestamp": 1738948760.2170901, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": "Task-1"}
+{"timestamp": 1738948760.217105, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": "Task-1"}
+{"timestamp": 1738948760.21712, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": "Task-1"}
+{"timestamp": 1738948760.2171369, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": "Task-1"}
+{"timestamp": 1738948809.281673, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-8"}
+{"timestamp": 1738948809.2869089, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-9"}
+{"timestamp": 1738948880.7773151, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-11"}
+{"timestamp": 1738948880.782315, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-11"}
+{"timestamp": 1738948880.800501, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-12"}
+{"timestamp": 1738948880.800565, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-12"}
+{"timestamp": 1738948883.248439, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-14"}
+{"timestamp": 1738948883.249058, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-14"}
+{"timestamp": 1738948883.2972522, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-15"}
+{"timestamp": 1738948883.297487, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-15"}
+{"timestamp": 1738948884.236856, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-16"}
+{"timestamp": 1738948884.241461, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-17"}
+{"timestamp": 1738948897.614296, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-19"}
+{"timestamp": 1738948897.6182451, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-20"}
+{"timestamp": 1738948901.7098749, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-21"}
+{"timestamp": 1738948901.710111, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-21"}
+{"timestamp": 1738948901.714581, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 0 roles de la base de datos", "taskName": "Task-22"}
+{"timestamp": 1738948901.714698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-22"}
+{"timestamp": 1738948908.1449301, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Rol 'Administrador' creado exitosamente con ID 1", "taskName": "Task-26"}
+{"timestamp": 1738948908.145185, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Rol creado: Administrador con ID 1", "taskName": "Task-26"}
+{"timestamp": 1738948908.155304, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 roles de la base de datos", "taskName": "Task-27"}
+{"timestamp": 1738948908.155498, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Roles obtenidos exitosamente", "taskName": "Task-27"}
+{"timestamp": 1738948911.760109, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-28"}
+{"timestamp": 1738948911.769726, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-29"}
+{"timestamp": 1738948916.6287029, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el puesto de trabajo: (psycopg2.errors.NotNullViolation) null value in column \"description\" of relation \"job_positions\" violates not-null constraint\nDETAIL:  Failing row contains (1, Juez, null).\n\n[SQL: INSERT INTO job_positions (title, description) VALUES (%(title)s, %(description)s) RETURNING job_positions.id]\n[parameters: {'title': 'Juez', 'description': None}]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "taskName": "Task-33"}
+{"timestamp": 1738948991.6863549, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el puesto de trabajo: (psycopg2.errors.NotNullViolation) null value in column \"description\" of relation \"job_positions\" violates not-null constraint\nDETAIL:  Failing row contains (2, Juez, null).\n\n[SQL: INSERT INTO job_positions (title, description) VALUES (%(title)s, %(description)s) RETURNING job_positions.id]\n[parameters: {'title': 'Juez', 'description': None}]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "taskName": "Task-35"}
+{"timestamp": 1738949000.00694, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "DATABASE_URL: postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db", "taskName": "Task-1"}
+{"timestamp": 1738949000.1904268, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Tablas disponibles:", "taskName": "Task-1"}
+{"timestamp": 1738949000.190513, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "disciplines", "taskName": "Task-1"}
+{"timestamp": 1738949000.19055, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championships", "taskName": "Task-1"}
+{"timestamp": 1738949000.190578, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "organizers", "taskName": "Task-1"}
+{"timestamp": 1738949000.1906009, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "alembic_version", "taskName": "Task-1"}
+{"timestamp": 1738949000.190623, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "permissions", "taskName": "Task-1"}
+{"timestamp": 1738949000.190644, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "role_permission_association", "taskName": "Task-1"}
+{"timestamp": 1738949000.190665, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "roles", "taskName": "Task-1"}
+{"timestamp": 1738949000.190686, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "user_roles", "taskName": "Task-1"}
+{"timestamp": 1738949000.190706, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "users", "taskName": "Task-1"}
+{"timestamp": 1738949000.1907258, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "championship_assignments", "taskName": "Task-1"}
+{"timestamp": 1738949000.1907468, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "job_positions", "taskName": "Task-1"}
+{"timestamp": 1738949003.06428, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el puesto de trabajo: (psycopg2.errors.NotNullViolation) null value in column \"description\" of relation \"job_positions\" violates not-null constraint\nDETAIL:  Failing row contains (3, Juez, null).\n\n[SQL: INSERT INTO job_positions (title, description) VALUES (%(title)s, %(description)s) RETURNING job_positions.id]\n[parameters: {'title': 'Juez', 'description': None}]\n(Background on this error at: https://sqlalche.me/e/20/gkpj)", "taskName": "Task-5"}
+{"timestamp": 1738949310.744233, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-7"}
+{"timestamp": 1738949310.745687, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-7"}
+{"timestamp": 1738949310.760046, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-8"}
+{"timestamp": 1738949310.760119, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-8"}
+{"timestamp": 1738949312.1104698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-10"}
+{"timestamp": 1738949312.115391, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-11"}
+{"timestamp": 1738949315.604191, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puesto de trabajo 'Juez' creado exitosamente", "taskName": "Task-15"}
+{"timestamp": 1738949315.6156642, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-16"}
+{"timestamp": 1738949318.810768, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-18"}
+{"timestamp": 1738949318.811435, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-18"}
+{"timestamp": 1738949318.817454, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-19"}
+{"timestamp": 1738949318.817539, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-19"}
+{"timestamp": 1738949319.591151, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-20"}
+{"timestamp": 1738949319.598656, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-21"}
+{"timestamp": 1738949354.015859, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-23"}
+{"timestamp": 1738949465.580554, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-25"}
+{"timestamp": 1738949466.7106838, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-27"}
+{"timestamp": 1738949504.109698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-29"}
+{"timestamp": 1738949530.952799, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-31"}
+{"timestamp": 1738949535.067206, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-33"}
+{"timestamp": 1738949542.445545, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-35"}
+{"timestamp": 1738949542.4499211, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-36"}
+{"timestamp": 1738949545.440304, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-37"}
+{"timestamp": 1738949545.447628, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-38"}
+{"timestamp": 1738949551.514868, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-40"}
+{"timestamp": 1738949551.520847, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-41"}
+{"timestamp": 1738949557.5623329, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-43"}
+{"timestamp": 1738949557.5700889, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-44"}
+{"timestamp": 1738949566.0932028, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-46"}
+{"timestamp": 1738949566.0989928, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-47"}
+{"timestamp": 1738949571.885536, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-49"}
+{"timestamp": 1738949588.6855822, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-51"}
+{"timestamp": 1738949603.007783, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-53"}
+{"timestamp": 1738949632.124602, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-55"}
+{"timestamp": 1738949636.059309, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-56"}
+{"timestamp": 1738949639.745889, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-58"}
+{"timestamp": 1738949643.190078, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-60"}
+{"timestamp": 1738949649.186995, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-62"}
+{"timestamp": 1738949655.8234591, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-64"}
+{"timestamp": 1738949661.586897, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-66"}
+{"timestamp": 1738949683.127723, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-68"}
+{"timestamp": 1738949686.883435, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-70"}
+{"timestamp": 1738949690.563468, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-71"}
+{"timestamp": 1738949694.753302, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-73"}
+{"timestamp": 1738949701.939221, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-75"}
+{"timestamp": 1738949703.748943, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-76"}
+{"timestamp": 1738949704.752485, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-77"}
+{"timestamp": 1738949709.408277, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-79"}
+{"timestamp": 1738949709.416908, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-80"}
+{"timestamp": 1738949744.327297, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-82"}
+{"timestamp": 1738949749.2874408, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuario con ID 1 encontrado", "taskName": "Task-84"}
+{"timestamp": 1738949752.8626812, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-86"}
+{"timestamp": 1738949752.8671548, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-87"}
+{"timestamp": 1738949755.830626, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-88"}
+{"timestamp": 1738949755.8310149, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-88"}
+{"timestamp": 1738949755.8376698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-89"}
+{"timestamp": 1738949755.837909, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-89"}
+{"timestamp": 1738949755.849678, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-92"}
+{"timestamp": 1738949755.8586822, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-94"}
+{"timestamp": 1738949864.304864, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-98"}
+{"timestamp": 1738949864.305921, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-98"}
+{"timestamp": 1738949864.3152509, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-99"}
+{"timestamp": 1738949864.315367, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-99"}
+{"timestamp": 1738949864.324258, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-102"}
+{"timestamp": 1738949864.330128, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-104"}
+{"timestamp": 1738949890.5060742, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-108"}
+{"timestamp": 1738949890.546002, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-109"}
+{"timestamp": 1738949892.453024, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-111"}
+{"timestamp": 1738949892.453894, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-111"}
+{"timestamp": 1738949892.477997, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-112"}
+{"timestamp": 1738949892.4781718, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-112"}
+{"timestamp": 1738949892.5069492, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-115"}
+{"timestamp": 1738949892.526735, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-117"}
+{"timestamp": 1738949905.7049952, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-121"}
+{"timestamp": 1738949905.727426, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-122"}
+{"timestamp": 1738949965.7560582, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-124"}
+{"timestamp": 1738949965.767989, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-125"}
+{"timestamp": 1738949968.757586, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-127"}
+{"timestamp": 1738949968.764565, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-128"}
+{"timestamp": 1738949970.212131, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-129"}
+{"timestamp": 1738949970.3069901, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-130"}
+{"timestamp": 1738949971.621691, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-132"}
+{"timestamp": 1738949971.622155, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-132"}
+{"timestamp": 1738949971.6299021, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-133"}
+{"timestamp": 1738949971.6300328, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-133"}
+{"timestamp": 1738949971.635196, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-136"}
+{"timestamp": 1738949971.643448, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-138"}
+{"timestamp": 1738949989.851987, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-142"}
+{"timestamp": 1738949989.878832, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-143"}
+{"timestamp": 1738949990.910112, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-144"}
+{"timestamp": 1738949990.9104698, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-144"}
+{"timestamp": 1738949990.9169338, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-145"}
+{"timestamp": 1738949990.917067, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-145"}
+{"timestamp": 1738949990.922772, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-148"}
+{"timestamp": 1738949990.927516, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-150"}
+{"timestamp": 1738950084.109461, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-154"}
+{"timestamp": 1738950084.1577148, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-155"}
+{"timestamp": 1738950084.877425, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-156"}
+{"timestamp": 1738950084.87764, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-156"}
+{"timestamp": 1738950084.882891, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-157"}
+{"timestamp": 1738950084.883061, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-157"}
+{"timestamp": 1738950084.8999538, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-160"}
+{"timestamp": 1738950084.915456, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-163"}
+{"timestamp": 1738950090.372721, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-166"}
+{"timestamp": 1738950090.38321, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-167"}
+{"timestamp": 1738950144.2452512, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-169"}
+{"timestamp": 1738950149.2449, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-171"}
+{"timestamp": 1738950151.7294028, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-173"}
+{"timestamp": 1738950162.8311732, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-175"}
+{"timestamp": 1738950162.832329, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-175"}
+{"timestamp": 1738950162.838785, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-176"}
+{"timestamp": 1738950162.8388631, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-176"}
+{"timestamp": 1738950162.845712, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-179"}
+{"timestamp": 1738950162.848661, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-181"}
+{"timestamp": 1738950162.851469, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-182"}
+{"timestamp": 1738950162.879436, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-183"}
+{"timestamp": 1738950223.029272, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-185"}
+{"timestamp": 1738950223.136443, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-186"}
+{"timestamp": 1738950224.628355, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-187"}
+{"timestamp": 1738950224.629672, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-187"}
+{"timestamp": 1738950224.635923, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-188"}
+{"timestamp": 1738950224.636142, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-188"}
+{"timestamp": 1738950224.640959, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-191"}
+{"timestamp": 1738950224.644661, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-193"}
+{"timestamp": 1738950224.647648, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-194"}
+{"timestamp": 1738950224.6505442, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-195"}
+{"timestamp": 1738950236.852695, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-197"}
+{"timestamp": 1738950236.8597991, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-198"}
+{"timestamp": 1738950237.9998138, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-199"}
+{"timestamp": 1738950238.305215, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-200"}
+{"timestamp": 1738950239.181622, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-201"}
+{"timestamp": 1738950239.182036, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-201"}
+{"timestamp": 1738950239.188363, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Se han recuperado 1 usuarios de la base de datos", "taskName": "Task-202"}
+{"timestamp": 1738950239.188549, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Usuarios obtenidos exitosamente", "taskName": "Task-202"}
+{"timestamp": 1738950239.1943731, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-205"}
+{"timestamp": 1738950239.198381, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-207"}
+{"timestamp": 1738950239.2014909, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-208"}
+{"timestamp": 1738950239.204994, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Puestos de trabajo obtenidos exitosamente", "taskName": "Task-209"}
+{"timestamp": 1738950246.3723671, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-211"}
+{"timestamp": 1738950246.386243, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-212"}
+{"timestamp": 1738950253.7781692, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-214"}
+{"timestamp": 1738950253.786905, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-215"}
+{"timestamp": 1738950258.629277, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-217"}
+{"timestamp": 1738950258.635746, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-218"}
+{"timestamp": 1738950307.8360388, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-223"}
+{"timestamp": 1738950307.840832, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-224"}
+{"timestamp": 1738950309.352611, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-227"}
+{"timestamp": 1738950309.356586, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-228"}
+{"timestamp": 1738950309.3641732, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-230"}
+{"timestamp": 1738950309.374206, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-232"}
+{"timestamp": 1738950351.00678, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-243"}
+{"timestamp": 1738950351.0283918, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-244"}
+{"timestamp": 1738950351.040137, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-246"}
+{"timestamp": 1738950351.0452359, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-248"}
+{"timestamp": 1738950362.226859, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-253"}
+{"timestamp": 1738950362.2332, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-254"}
+{"timestamp": 1738950366.6806688, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizador 'Prado' creado exitosamente", "taskName": "Task-258"}
+{"timestamp": 1738950366.691257, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-260"}
+{"timestamp": 1738950597.765358, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-265"}
+{"timestamp": 1738950597.780162, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-266"}
+{"timestamp": 1738950662.170767, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplina 'Surf' creada exitosamente", "taskName": "Task-270"}
+{"timestamp": 1738950662.1801941, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-272"}
+{"timestamp": 1738950665.447904, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-275"}
+{"timestamp": 1738950665.4505868, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-276"}
+{"timestamp": 1738950667.6093419, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-278"}
+{"timestamp": 1738950667.613431, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Asignaciones obtenidas exitosamente", "taskName": "Task-279"}
+{"timestamp": 1738950670.44871, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-283"}
+{"timestamp": 1738950670.453578, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Campeonatos obtenidos exitosamente", "taskName": "Task-284"}
+{"timestamp": 1738950671.577584, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-288"}
+{"timestamp": 1738950671.582348, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-289"}
+{"timestamp": 1738950671.5872798, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-292"}
+{"timestamp": 1738950671.592188, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-294"}
+{"timestamp": 1738950804.846198, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-303"}
+{"timestamp": 1738950804.8817642, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Organizadores obtenidos exitosamente", "taskName": "Task-304"}
+{"timestamp": 1738950804.887051, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-306"}
+{"timestamp": 1738950804.8918111, "level": "INFO", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Disciplinas obtenidas exitosamente", "taskName": "Task-308"}
+{"timestamp": 1738950824.3252292, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el campeonato: 'str' object has no attribute '_sa_instance_state'", "taskName": "Task-310"}
+{"timestamp": 1738951446.626532, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el campeonato: 'str' object has no attribute '_sa_instance_state'", "taskName": "Task-314"}
+{"timestamp": 1738951515.846548, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el campeonato: 'str' object has no attribute '_sa_instance_state'", "taskName": "Task-316"}
+{"timestamp": 1738951577.511864, "level": "ERROR", "transaction_id": "N/A", "user_id": "anonymous", "source": "backend", "message": "Error al crear el campeonato: 'str' object has no attribute '_sa_instance_state'", "taskName": "Task-318"}

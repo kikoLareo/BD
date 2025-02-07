@@ -12,6 +12,7 @@ router = APIRouter(
 
 
 
+
 @router.post("/create", response_model=LocationResponse)
 def create_location(location: LocationCreate, db: Session = Depends(get_db)):
     new_location = Location(**location.dict())

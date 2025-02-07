@@ -26,7 +26,7 @@ class User(Base):
 class Role(Base):
     __tablename__ = "roles"
     id = Column(Integer, primary_key=True, index=True)
-    name = Column(String, unique=True, index=True, nullable=False)
+    name = Column(String, unique=True, index=True)
     description = Column(String)
     permissions = relationship("Permission", secondary=role_permission_association, back_populates="roles")
     users = relationship("UserRole", back_populates="role")
@@ -66,7 +66,7 @@ class JobPosition(Base):
     __tablename__ = "job_positions"
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, unique=True, index=True, nullable=False)
-    description = Column(String, nullable=False)
+    description = Column(String)
     assignments = relationship("ChampionshipAssignment", back_populates="job_position")
 
 # Modelo de Asignación de Usuarios a Campeonatos
