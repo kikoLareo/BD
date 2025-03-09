@@ -13,10 +13,11 @@ def create_championship(db: Session, championship_data: ChampionshipCreate):
     new_championship = Championship(
         name=championship_data.name,
         location=championship_data.location,
-        start_date=championship_data.start_date,  # Campo añadido
-        end_date=championship_data.end_date,      # Campo añadido
-        organizer_id=championship_data.organizer_id,  # Cambia esto
-        discipline=championship_data.discipline   # Campo añadido
+        start_date=championship_data.start_date,
+        end_date=championship_data.end_date,
+        organizer_id=championship_data.organizer_id,
+        discipline_id=championship_data.discipline_id,
+        description=championship_data.description
     )
     db.add(new_championship)
     db.commit()
@@ -33,8 +34,16 @@ def update_championship(db: Session, championship_id: int, championship_data: Ch
         championship.name = championship_data.name
     if championship_data.location is not None:
         championship.location = championship_data.location
-    if championship_data.date is not None:
-        championship.date = championship_data.date
+    if championship_data.start_date is not None:
+        championship.start_date = championship_data.start_date
+    if championship_data.end_date is not None:
+        championship.end_date = championship_data.end_date
+    if championship_data.organizer_id is not None:
+        championship.organizer_id = championship_data.organizer_id
+    if championship_data.discipline_id is not None:
+        championship.discipline_id = championship_data.discipline_id
+    if championship_data.description is not None:
+        championship.description = championship_data.description
 
     db.commit()
     db.refresh(championship)

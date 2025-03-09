@@ -28,7 +28,7 @@ async def get_job_position(job_position_id: int, db: Session = Depends(get_db)):
         logger.error(f"Puesto de trabajo con ID {job_position_id} no encontrado")
         raise HTTPException(status_code=404, detail="Puesto de trabajo no encontrado")
 
-    logger.info(f"Puesto de trabajo con ID {job_position_id} obtenido exitosamente")
+    logger.info(f"Puesto de trabajo con ID {job_position_id} obtenido exitosamente")    
     return job_position
 
 # Endpoint para crear un puesto de trabajo

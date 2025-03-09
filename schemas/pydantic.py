@@ -11,3 +11,11 @@ class TokenData(BaseModel):
 class UserLogin(BaseModel):
     username: str
     password: str
+    
+    class Config:
+        schema_extra = {
+            "example": {
+                "username": "usuario",
+                "password": "contraseña"
+            }
+        }

@@ -52,10 +52,11 @@ class Championship(Base):
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True)
     location = Column(String)
-    start_date = Column(DateTime)
-    end_date = Column(DateTime)
+    start_date = Column(Date)  # Cambiado de DateTime a Date
+    end_date = Column(Date)    # Cambiado de DateTime a Date
     organizer_id = Column(Integer, ForeignKey("organizers.id"))
-    discipline_id = Column(Integer, ForeignKey("disciplines.id"))  # Clave foránea añadida
+    discipline_id = Column(Integer, ForeignKey("disciplines.id"))
+    description = Column(String, nullable=True)  # Añadido campo de descripción
 
     organizer = relationship("Organizer", back_populates="championships")
     discipline = relationship("Discipline", back_populates="championships")
@@ -76,6 +77,8 @@ class ChampionshipAssignment(Base):
     championship_id = Column(Integer, ForeignKey("championships.id"), primary_key=True)
     job_position_id = Column(Integer, ForeignKey("job_positions.id"))
     hours_worked = Column(Float)
+    start_date = Column(Date, nullable=True)  # Fecha de inicio de la asignación
+    end_date = Column(Date, nullable=True)    # Fecha de fin de la asignación
 
     user = relationship("User", back_populates="assignments")
     championship = relationship("Championship", back_populates="assignments")
@@ -86,6 +89,11 @@ class Organizer(Base):
     __tablename__ = "organizers"
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, unique=True, index=True, nullable=False)
+    description = Column(String, nullable=True)
+    placement = Column(String, nullable=True)  # Ubicación física
+    phone = Column(String, nullable=True)
+    email = Column(String, nullable=True)
+    website = Column(String, nullable=True)
     championships = relationship("Championship", back_populates="organizer")
 
 # Modelo de Disciplina
@@ -95,4 +103,3 @@ class Discipline(Base):
     name = Column(String, unique=True, index=True, nullable=False)
     category = Column(String) 
     championships = relationship("Championship", back_populates="discipline")
-
