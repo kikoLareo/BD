@@ -21,12 +21,22 @@ app = FastAPI(
 )
 
 # Configuración de CORS
+origins = [
+    "http://localhost:5173",  # Frontend development server
+    "http://localhost:5174",  # Frontend development server (alternative port)
+    "http://localhost:3000",  # Alternative frontend port
+    "http://localhost",
+    "*",  # Allow all origins as fallback
+]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
+    allow_headers=["Content-Type", "Authorization", "Accept", "X-Requested-With"],
+    expose_headers=["Content-Length"],
+    max_age=600,  # Cache preflight requests for 10 minutes
 )
 
 # Función para crear un usuario Master inicial si no existe ninguno

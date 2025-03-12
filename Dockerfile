@@ -7,6 +7,7 @@ WORKDIR /app
 # Instalar dependencias
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir email-validator python-jose python-dotenv python-multipart
 
 # Copiar el código del proyecto
 COPY . .

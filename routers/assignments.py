@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Response
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError, IntegrityError
 from models.models import ChampionshipAssignment, JobPosition, Championship, User
@@ -46,10 +46,15 @@ def serialize_assignment(assignment: ChampionshipAssignment, db: Session):
 
 # ✅ Endpoint para obtener todas las asignaciones
 @router.get("", response_model=List[ChampionshipAssignmentResponse])
-async def get_all_assignments(db: Session = Depends(get_db)):
+async def get_all_assignments(response: Response, db: Session = Depends(get_db)):
     """
     Obtiene todas las asignaciones.
     """
+    # Agregar encabezados CORS manualmente
+    response.headers["Access-Control-Allow-Origin"] = "*"
+    response.headers["Access-Control-Allow-Methods"] = "GET, POST, PUT, DELETE, OPTIONS"
+    response.headers["Access-Control-Allow-Headers"] = "Content-Type, Authorization, Accept"
+    
     logger.info("Iniciando obtención de todas las asignaciones")
     try:
         assignments = db.query(ChampionshipAssignment).all()
@@ -75,6 +80,45 @@ async def get_all_assignments(db: Session = Depends(get_db)):
             status_code=500,
             details=f"Error inesperado: {str(e)}"
         )
+
+# ✅ Endpoint para obtener una asignación específica por ID
+@router.get("/{assignment_id}", response_model=ChampionshipAssignmentResponse)
+@handle_exceptions
+async def get_assignment_by_id(assignment_id: int, db: Session = Depends(get_db)):
+    assignment = db.query(ChampionshipAssignment).filter(
+        ChampionshipAssignment.id == assignment_id
+    ).first()
+
+    if not assignment:
+        logger.error(f"Asignación no encontrada con el ID {assignment_id}")
+        raise CommonErrors.not_found("Asignación", f"ID {assignment_id}")
+
+    logger.info(f"Asignación obtenida exitosamente con el ID {assignment_id}")
+
+    return serialize_assignment(assignment, db)
+
+    
+    
+
+
+# ✅ Endpoint para obtener todas las asignaciones de un usuario específico
+@router.get("/user/{user_id}", response_model=List[ChampionshipAssignmentResponse])
+@handle_exceptions
+async def get_assignments_by_user(user_id: int, db: Session = Depends(get_db)):
+    assignments = db.query(ChampionshipAssignment).filter(
+        ChampionshipAssignment.user_id == user_id
+    ).all()
+
+    if not assignments:
+        logger.error(f"No se encontraron asignaciones para el usuario {user_id}")
+        raise CommonErrors.not_found("Asignaciones", f"usuario {user_id}")
+
+    logger.info(f"Asignaciones obtenidas exitosamente para el usuario {user_id}")
+
+    result = [serialize_assignment(assignment, db) for assignment in assignments]
+
+    return result
+
 
 
 # ✅ Endpoint para obtener todas las asignaciones de un campeonato específico
@@ -264,4 +308,3 @@ async def delete_assignment(user_id: int, championship_id: int, db: Session = De
         db.rollback()
         logger.error(f"Error inesperado al eliminar asignación: {str(e)}")
         raise CommonErrors.internal_error(f"Error al eliminar la asignación: {str(e)}")
-

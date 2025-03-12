@@ -73,9 +73,11 @@ class JobPosition(Base):
 # Modelo de Asignación de Usuarios a Campeonatos
 class ChampionshipAssignment(Base):
     __tablename__ = "championship_assignments"
-    user_id = Column(Integer, ForeignKey("users.id"), primary_key=True)
-    championship_id = Column(Integer, ForeignKey("championships.id"), primary_key=True)
-    job_position_id = Column(Integer, ForeignKey("job_positions.id"))
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    championship_id = Column(Integer, ForeignKey("championships.id"), nullable=False)
+    job_position_id = Column(Integer, ForeignKey("job_positions.id"), nullable=False)
+
     hours_worked = Column(Float)
     start_date = Column(Date, nullable=True)  # Fecha de inicio de la asignación
     end_date = Column(Date, nullable=True)    # Fecha de fin de la asignación
