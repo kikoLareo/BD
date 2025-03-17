@@ -35,9 +35,14 @@ async def get_job_position(job_position_id: int, db: Session = Depends(get_db)):
 @router.post("/create", response_model=JobPositionResponse)
 async def create_job_position(job_data: JobPositionCreate, db: Session = Depends(get_db)):
     try:
+        if(job_data.cost_per_hour == None):
+            job_data.cost_per_hour = job_data.cost_per_day / 8
+
         new_job_position = JobPosition(
             title=job_data.title,
-            description=job_data.description
+            description=job_data.description,
+            cost_per_day=job_data.cost_per_day,
+            cost_per_hour=job_data.cost_per
         )
         db.add(new_job_position)
         db.commit()
@@ -60,6 +65,12 @@ async def update_job_position(job_position_id: int, job_data: JobPositionUpdate,
         job_position.title = job_data.title
     if job_data.description:
         job_position.description = job_data.description
+    if job_data.cost_per_day:
+        job_position.cost_per_day = job_data.cost_per_day
+        if not job_data.cost_per_hour:
+            job_position.cost_per_hour = job_data.cost_per_day / 8
+    if job_data.cost_per_hour:
+        job_position.cost_per_hour = job_data.cost_per_hour
 
     db.commit()
     db.refresh(job_position)

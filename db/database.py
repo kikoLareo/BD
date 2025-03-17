@@ -5,7 +5,15 @@ import os
 from logging_config import logger
 
 Base = declarative_base()
-DATABASE_URL = os.getenv('DATABASE_URL', 'postgresql://waveshub_user:WavesHub@localhost:5432/waveshub_db')
+
+# Construir la URL de conexión a partir de variables de entorno
+DB_HOST = os.getenv('DB_HOST', 'localhost')
+DB_NAME = os.getenv('DB_NAME', 'wavestudio_db')
+DB_USER = os.getenv('DB_USER', 'kiko')
+DB_PASSWORD = os.getenv('DB_PASSWORD', '.,Franlareo1701_.,')
+DB_PORT = os.getenv('DB_PORT', '5432')
+
+DATABASE_URL = os.getenv('DATABASE_URL', f'postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}')
 logger.info(f"DATABASE_URL: {DATABASE_URL}")
 
 engine = create_engine(DATABASE_URL,    echo=True )

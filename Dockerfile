@@ -1,19 +1,17 @@
-# Utilizar una imagen base de Python
-FROM python:3.10-slim
+FROM python:3.12-slim
 
-# Configurar directorio de trabajo
+# Instalar dependencias del sistema si necesitas psycopg2
+RUN apt-get update && apt-get install -y gcc libpq-dev
+
+# Crear el directorio de trabajo
 WORKDIR /app
 
-# Instalar dependencias
+# Copiar e instalar dependencias
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-RUN pip install --no-cache-dir email-validator python-jose python-dotenv python-multipart
 
-# Copiar el código del proyecto
+# Copiar el código fuente
 COPY . .
 
-# Exponer el puerto
-EXPOSE 8000
-
-# Ejecutar la aplicación
+# Comando para arrancar FastAPI con Uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8000"]

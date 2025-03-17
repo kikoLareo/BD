@@ -68,6 +68,8 @@ class JobPosition(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String, unique=True, index=True, nullable=False)
     description = Column(String)
+    cost_per_day = Column(Float, nullable=False)
+    cost_per_hour = Column(Float)
     assignments = relationship("ChampionshipAssignment", back_populates="job_position")
 
 # Modelo de Asignación de Usuarios a Campeonatos

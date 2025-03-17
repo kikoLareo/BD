@@ -99,6 +99,24 @@ async def get_assignment_by_id(assignment_id: int, db: Session = Depends(get_db)
 
     
     
+# ✅ Endpoint para obtener todas las asignaciones de un puesto específico
+@router.get("/job/{job_position_id}", response_model=List[ChampionshipAssignmentResponse])
+@handle_exceptions
+async def get_assignments_by_job(job_position_id: int, db: Session = Depends(get_db)):
+    assignments = db.query(ChampionshipAssignment).filter(
+        ChampionshipAssignment.job_position_id == job_position_id
+    ).all()
+
+    if not assignments:
+        logger.error(f"No se encontraron asignaciones para el puesto {job_position_id}")
+        raise CommonErrors.not_found("Asignaciones", f"puesto {job_position_id}")
+
+    logger.info(f"Asignaciones obtenidas exitosamente para el puesto {job_position_id}")
+
+    result = [serialize_assignment(assignment, db) for assignment in assignments]
+
+    return result
+    
 
 
 # ✅ Endpoint para obtener todas las asignaciones de un usuario específico

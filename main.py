@@ -49,8 +49,10 @@ def create_initial_master_user(db: Session):
     
     # Obtener credenciales desde variables de entorno
     master_username = os.getenv("MASTER_USERNAME", "admin")
-    master_email = os.getenv("MASTER_EMAIL", "admin@example.com")
-    master_password = os.getenv("MASTER_PASSWORD", "admin123")
+    master_email = os.getenv("MASTER_EMAIL", "admin@admin.com")
+    # Use a strong default password with mixed case, numbers, and special characters
+    # In production, always set MASTER_PASSWORD in environment variables
+    master_password = os.getenv("MASTER_PASSWORD", "P@ssw0rd_S3cure!2024")
     
     # Verificar si ya existe el rol "master"
     master_role = db.query(Role).filter(Role.name == "master").first()
