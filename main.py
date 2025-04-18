@@ -14,13 +14,15 @@ from db.database import Base, engine  # o el path correcto según tu estructura
 
 Base.metadata.create_all(bind=engine)
 
+
 # Cargar variables de entorno
 load_dotenv()
 
 app = FastAPI(
     title="Sistema de Gestión de Usuarios y Roles",
     description="API para la gestión de usuarios, roles y permisos",
-    version="1.0.0"
+    version="1.0.0",
+    root_path="/api",
 )
 
 # Configuración de CORS
