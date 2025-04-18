@@ -33,6 +33,8 @@ origins = [
     "http://localhost",
     "https://wavestudio-backend.com",  # Production domain
     "http://wavestudio-backend.com",   # Production domain (HTTP)
+    "https://wavestudio-backend.com/*",  # Production domain with wildcard
+    "http://wavestudio-backend.com/*",   # Production domain with wildcard
 ]
 
 # Función para obtener los orígenes permitidos
@@ -45,10 +47,32 @@ def get_allowed_origins():
     logger.info(f"Configurando CORS con orígenes específicos: {origins}")
     return origins
 
+# Manejador personalizado para HTTPException que preserva los headers CORS
+from fastapi import HTTPException
+from fastapi.responses import JSONResponse
+from starlette.requests import Request
+
+@app.exception_handler(HTTPException)
+async def http_exception_handler(request: Request, exc: HTTPException):
+    """
+    Manejador personalizado para HTTPException que preserva los headers CORS.
+    """
+    response = JSONResponse(
+        status_code=exc.status_code,
+        content={"detail": exc.detail},
+    )
+    
+    # Añadir headers CORS a la respuesta
+    origin = request.headers.get("origin")
+    if origin and origin in origins:
+        response.headers["Access-Control-Allow-Origin"] = origin
+        response.headers["Access-Control-Allow-Credentials"] = "true"
+    
+    return response
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
-    # allow_origins=get_allowed_origins(),  # Permitir todos los orígenes en modo debug
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["Content-Type", "Authorization", "Accept", "X-Requested-With"],

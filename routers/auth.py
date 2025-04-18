@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, status, Request
+from fastapi import APIRouter, Depends, status, Request, HTTPException
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError
@@ -36,16 +36,12 @@ async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(
         # Si no existe el usuario o la contraseña es incorrecta
         if not user or not verify_password(form_data.password, user.password_hash):
             logger.warning(f"Intento de login fallido para el usuario: {form_data.username}")
-            raise APIError(
-                code=ErrorCodes.INVALID_CREDENTIALS,
-                message="Credenciales inválidas",
+            raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                details="El nombre de usuario o la contraseña son incorrectos"
+                detail="Credenciales inválidas",
+                headers={"WWW-Authenticate": "Bearer"},
             )
-        
-        # Obtener roles del usuario
-        user_roles = db.query(UserRole).filter(UserRole.user_id == user.id).all()
-        role_ids = [user_role.role_id for user_role in user_roles]
+        logger.info(f"Usuario encontrado: {user.username}")
         
         # Crear datos para el token
         token_data = {
@@ -86,11 +82,10 @@ async def login(request: Request, db: Session = Depends(get_db)):
         except Exception as e:
             logger.error(f"Error al parsear el cuerpo de la solicitud: {str(e)}")
             logger.error(f"Contenido de la solicitud: {await request.body()}")
-            raise APIError(
-                code=ErrorCodes.INVALID_FORMAT,
-                message="Formato de solicitud inválido",
+            raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                details="El cuerpo de la solicitud debe ser un JSON válido"
+                detail="Error al procesar la solicitud",
+                headers={"Content-Type": "application/json"}
             )
         
         # Validar que los datos requeridos estén presentes
@@ -101,13 +96,11 @@ async def login(request: Request, db: Session = Depends(get_db)):
         
         if not username or not password:
             logger.warning("Intento de login con datos incompletos")
-            raise APIError(
-                code=ErrorCodes.MISSING_FIELDS,
-                message="Datos incompletos",
+            raise HTTPException(
                 status_code=status.HTTP_400_BAD_REQUEST,
-                details="El nombre de usuario y la contraseña son obligatorios"
+                detail="Nombre de usuario y contraseña son requeridos",
+                headers={"Content-Type": "application/json"}
             )
-            
         logger.info(f"Intento de login para el usuario: {username}")
         
         # Buscar usuario por nombre de usuario
@@ -121,13 +114,12 @@ async def login(request: Request, db: Session = Depends(get_db)):
         # Si no existe el usuario o la contraseña es incorrecta
         if not user:
             logger.warning(f"Usuario no encontrado: {username}")
-            raise APIError(
-                code=ErrorCodes.INVALID_CREDENTIALS,
-                message="Credenciales inválidas",
+            raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                details="El nombre de usuario o la contraseña son incorrectos"
+                detail="Credenciales inválidas",
+                headers={"WWW-Authenticate": "Bearer"},
             )
-            
+        logger.info(f"Usuario encontrado: {user.username}")
         # Verificar contraseña
         try:
             password_valid = verify_password(password, user.password_hash)
@@ -138,12 +130,12 @@ async def login(request: Request, db: Session = Depends(get_db)):
             
         if not password_valid:
             logger.warning(f"Contraseña incorrecta para el usuario: {username}")
-            raise APIError(
-                code=ErrorCodes.INVALID_CREDENTIALS,
-                message="Credenciales inválidas",
+            raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
-                details="El nombre de usuario o la contraseña son incorrectos"
+                detail="Credenciales inválidas",
+                headers={"WWW-Authenticate": "Bearer"},
             )
+        logger.info(f"Contraseña verificada correctamente para el usuario: {username}")
         
         # Obtener roles del usuario
         try:

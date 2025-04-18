@@ -156,28 +156,65 @@ También puedes ejecutar los scripts de diagnóstico individualmente:
 ./scripts/test_cors.py --url https://wavestudio-backend.com/api/auth/login --verbose
 ```
 
+### Scripts de solución
+
+Este repositorio incluye scripts para solucionar los problemas más comunes:
+
+#### Crear o actualizar el usuario admin
+
+```bash
+# Hacer el script ejecutable
+chmod +x scripts/ensure_admin_user.py
+
+# Ejecutar el script
+./scripts/ensure_admin_user.py
+
+# Para forzar la actualización del usuario aunque ya exista
+./scripts/ensure_admin_user.py --force
+
+# Para especificar credenciales diferentes
+./scripts/ensure_admin_user.py --username admin --email admin@example.com --password secreto123
+```
+
+#### Desplegar cambios en el servidor
+
+```bash
+# Hacer el script ejecutable
+chmod +x scripts/deploy_changes.sh
+
+# Ejecutar el script
+./scripts/deploy_changes.sh
+
+# O especificar el host y la ruta del proyecto
+./scripts/deploy_changes.sh ubuntu@tu-instancia-ec2.amazonaws.com /home/ubuntu/BD
+```
+
 ### Solución de problemas comunes
 
 #### Error 500 en el endpoint de login
 
 Las causas más comunes del error 500 en el endpoint de login son:
 
-1. **Problema de conexión a la base de datos**:
+1. **Usuario no existe en la base de datos**:
+   - Ejecuta el script `ensure_admin_user.py` para crear el usuario admin
+   - Verifica que el usuario exista en la base de datos con las credenciales correctas
+
+2. **Problema de conexión a la base de datos**:
    - Verifica que la URL de conexión en `.env` sea correcta
    - Asegúrate de que la base de datos esté accesible desde la instancia EC2
    - Comprueba que las credenciales de la base de datos sean correctas
 
-2. **Configuración CORS incorrecta**:
+3. **Configuración CORS incorrecta**:
    - Si estás usando credenciales en la solicitud fetch, asegúrate de que:
-     - `allow_origins` no incluya el comodín "*"
+     - `allow_origins` incluya el origen exacto desde donde se hace la solicitud
      - `allow_credentials` esté configurado como `True`
-     - El origen exacto esté incluido en `allow_origins`
+     - Los headers CORS se añadan a todas las respuestas, incluso a las de error
 
-3. **Problema con la clave secreta JWT**:
+4. **Problema con la clave secreta JWT**:
    - Asegúrate de que la clave secreta en `.env` sea válida
    - Verifica que la clave secreta sea consistente en todos los entornos
 
-4. **Logs del servidor**:
+5. **Logs del servidor**:
    - Verifica los logs del servidor para obtener más detalles sobre el error:
      ```bash
      # Si estás usando Docker
@@ -186,6 +223,21 @@ Las causas más comunes del error 500 en el endpoint de login son:
      # Si estás conectado a la instancia EC2
      ssh ubuntu@tu-instancia-ec2 'docker logs wavestudio_api'
      ```
+
+### Pasos para solucionar el error 500 en el login
+
+1. **Actualiza la configuración CORS**:
+   - Asegúrate de que el origen `https://wavestudio-backend.com/login` esté incluido en la lista de orígenes permitidos en `main.py`
+   - Añade un manejador de excepciones personalizado para HTTPException que preserve los headers CORS
+
+2. **Crea el usuario admin**:
+   - Ejecuta el script `ensure_admin_user.py` para crear el usuario admin con las credenciales correctas
+
+3. **Despliega los cambios**:
+   - Ejecuta el script `deploy_changes.sh` para desplegar los cambios en el servidor y reiniciar la aplicación
+
+4. **Verifica que los cambios funcionan**:
+   - Prueba el endpoint de login nuevamente con el script `test_login.py`
 
 ## Desarrollo local
 
