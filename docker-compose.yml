@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    container_name: wavestudio_api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./:/app
+      - ./logs:/app/logs
+    environment:
+      - DB_HOST=db
+      - DB_NAME=wavestudio_db
+      - DB_USER=kiko
+      - DB_PASSWORD=.,Franlareo1701_.,
+      - SECRET_KEY=${SECRET_KEY:-your_secret_key_here_change_this_in_production}
+      - MASTER_USERNAME=${MASTER_USERNAME:-admin}
+      - MASTER_EMAIL=${MASTER_EMAIL:-admin@wavestudio.com}
+      - MASTER_PASSWORD=${MASTER_PASSWORD:-admin123}
+    depends_on:
+      - db
+    restart: unless-stopped
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload --log-level debug
+
+  db:
+    image: postgres:16
+    container_name: wavestudio_db
+    environment:
+      - POSTGRES_DB=wavestudio_db
+      - POSTGRES_USER=kiko
+      - POSTGRES_PASSWORD=.,Franlareo1701_.,
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

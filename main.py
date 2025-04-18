@@ -31,12 +31,24 @@ origins = [
     "http://localhost:5174",  # Frontend development server (alternative port)
     "http://localhost:3000",  # Alternative frontend port
     "http://localhost",
-    "*",  # Allow all origins as fallback
+    "https://wavestudio-backend.com",  # Production domain
+    "http://wavestudio-backend.com",   # Production domain (HTTP)
 ]
+
+# Función para obtener los orígenes permitidos
+def get_allowed_origins():
+    # Si estamos en modo debug, permitimos todos los orígenes
+    if os.getenv("DEBUG", "False").lower() == "true":
+        logger.info("Modo DEBUG activado: permitiendo todos los orígenes en CORS")
+        return ["*"]
+    # En producción, solo permitimos orígenes específicos
+    logger.info(f"Configurando CORS con orígenes específicos: {origins}")
+    return origins
 
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
+    # allow_origins=get_allowed_origins(),  # Permitir todos los orígenes en modo debug
     allow_credentials=True,
     allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS", "PATCH"],
     allow_headers=["Content-Type", "Authorization", "Accept", "X-Requested-With"],

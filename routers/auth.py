@@ -80,12 +80,24 @@ async def login(request: Request, db: Session = Depends(get_db)):
     """
     try:
         # Obtener los datos del cuerpo de la solicitud directamente
-        body = await request.json()
-        logger.info(f"Datos de login recibidos: {body}")
+        try:
+            body = await request.json()
+            logger.info(f"Datos de login recibidos: {body}")
+        except Exception as e:
+            logger.error(f"Error al parsear el cuerpo de la solicitud: {str(e)}")
+            logger.error(f"Contenido de la solicitud: {await request.body()}")
+            raise APIError(
+                code=ErrorCodes.INVALID_FORMAT,
+                message="Formato de solicitud inválido",
+                status_code=status.HTTP_400_BAD_REQUEST,
+                details="El cuerpo de la solicitud debe ser un JSON válido"
+            )
         
         # Validar que los datos requeridos estén presentes
         username = body.get("username")
         password = body.get("password")
+        
+        logger.info(f"Validando credenciales - Username: {username}, Password: {'*' * len(password) if password else 'None'}")
         
         if not username or not password:
             logger.warning("Intento de login con datos incompletos")
@@ -97,12 +109,35 @@ async def login(request: Request, db: Session = Depends(get_db)):
             )
             
         logger.info(f"Intento de login para el usuario: {username}")
+        
         # Buscar usuario por nombre de usuario
-        user = db.query(User).filter(User.username == username).first()
+        try:
+            user = db.query(User).filter(User.username == username).first()
+            logger.info(f"Resultado de búsqueda de usuario: {'Encontrado' if user else 'No encontrado'}")
+        except Exception as db_error:
+            logger.error(f"Error al consultar la base de datos: {str(db_error)}")
+            raise CommonErrors.database_error(f"Error al buscar el usuario: {str(db_error)}")
         
         # Si no existe el usuario o la contraseña es incorrecta
-        if not user or not verify_password(password, user.password_hash):
-            logger.warning(f"Intento de login fallido para el usuario: {username}")
+        if not user:
+            logger.warning(f"Usuario no encontrado: {username}")
+            raise APIError(
+                code=ErrorCodes.INVALID_CREDENTIALS,
+                message="Credenciales inválidas",
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                details="El nombre de usuario o la contraseña son incorrectos"
+            )
+            
+        # Verificar contraseña
+        try:
+            password_valid = verify_password(password, user.password_hash)
+            logger.info(f"Verificación de contraseña: {'Válida' if password_valid else 'Inválida'}")
+        except Exception as pwd_error:
+            logger.error(f"Error al verificar la contraseña: {str(pwd_error)}")
+            raise CommonErrors.internal_error(f"Error al verificar la contraseña: {str(pwd_error)}")
+            
+        if not password_valid:
+            logger.warning(f"Contraseña incorrecta para el usuario: {username}")
             raise APIError(
                 code=ErrorCodes.INVALID_CREDENTIALS,
                 message="Credenciales inválidas",
@@ -111,8 +146,13 @@ async def login(request: Request, db: Session = Depends(get_db)):
             )
         
         # Obtener roles del usuario
-        user_roles = db.query(UserRole).filter(UserRole.user_id == user.id).all()
-        role_ids = [user_role.role_id for user_role in user_roles]
+        try:
+            user_roles = db.query(UserRole).filter(UserRole.user_id == user.id).all()
+            role_ids = [user_role.role_id for user_role in user_roles]
+            logger.info(f"Roles del usuario {username}: {role_ids}")
+        except Exception as role_error:
+            logger.error(f"Error al obtener roles del usuario: {str(role_error)}")
+            raise CommonErrors.database_error(f"Error al obtener roles: {str(role_error)}")
         
         # Crear datos para el token
         token_data = {
@@ -123,10 +163,15 @@ async def login(request: Request, db: Session = Depends(get_db)):
         }
         
         # Generar token con duración de 12 semanas
-        access_token = create_access_token(
-            data=token_data,
-            expires_delta=timedelta(weeks=12)
-        )
+        try:
+            access_token = create_access_token(
+                data=token_data,
+                expires_delta=timedelta(weeks=12)
+            )
+            logger.info(f"Token JWT generado correctamente para el usuario: {username}")
+        except Exception as token_error:
+            logger.error(f"Error al generar el token JWT: {str(token_error)}")
+            raise CommonErrors.internal_error(f"Error al generar el token: {str(token_error)}")
         
         logger.info(f"Login exitoso para el usuario: {user.username}")
         return {
@@ -147,4 +192,5 @@ async def login(request: Request, db: Session = Depends(get_db)):
         raise CommonErrors.database_error(f"Error durante la autenticación: {str(e)}")
     except Exception as e:
         logger.error(f"Error inesperado durante la autenticación: {str(e)}")
+        logger.exception("Detalles del error:")
         raise CommonErrors.internal_error(f"Error durante la autenticación: {str(e)}")
