@@ -105,7 +105,7 @@ async def login(request: Request, db: Session = Depends(get_db)):
         
         # Buscar usuario por nombre de usuario
         try:
-            user = db.query(User).filter(User.username == username).first()
+            user = db.query(User).filter(User.username == username).first() or db.query(User).filter(User.email == username).first()
             logger.info(f"Resultado de búsqueda de usuario: {'Encontrado' if user else 'No encontrado'}")
         except Exception as db_error:
             logger.error(f"Error al consultar la base de datos: {str(db_error)}")
