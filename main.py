@@ -10,6 +10,9 @@ from logging_config import logger
 import os
 from dotenv import load_dotenv
 from datetime import datetime
+from db.database import Base, engine  # o el path correcto según tu estructura
+
+Base.metadata.create_all(bind=engine)
 
 # Cargar variables de entorno
 load_dotenv()
