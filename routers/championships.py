@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from sqlalchemy.exc import SQLAlchemyError, IntegrityError
 from schemas.championship import ChampionshipCreate, ChampionshipUpdate, ChampionshipDetailResponse
@@ -79,7 +79,10 @@ async def get_championship(championship_id: int, db: Session = Depends(get_db)):
         championship = get_championship_by_id(db, championship_id)
         if not championship:
             logger.error(f"Campeonato con ID {championship_id} no encontrado")
-            raise CommonErrors.not_found("Campeonato", championship_id)
+            raise HTTPException(
+                status_code=404,
+                detail=f"Campeonato con ID {championship_id} no encontrado"
+            )
 
         logger.info(f"Campeonato '{championship.name}' obtenido exitosamente")
 
@@ -104,12 +107,11 @@ async def create_new_championship(championship_data: ChampionshipCreate, db: Ses
         existing_championship = db.query(Championship).filter(Championship.name == championship_data.name).first()
         if existing_championship:
             logger.error(f"Ya existe un campeonato con el nombre '{championship_data.name}'")
-            raise APIError(
-                code=ErrorCodes.DUPLICATE_ENTRY,
-                message="El campeonato ya existe",
+            raise HTTPException(
                 status_code=400,
-                details=f"Ya existe un campeonato con el nombre '{championship_data.name}'"
+                detail=f"Ya existe un campeonato con el nombre '{championship_data.name}'"
             )
+
 
         new_championship = create_championship(db, championship_data)
         logger.info(f"Campeonato '{new_championship.name}' creado exitosamente")
@@ -146,12 +148,11 @@ async def update_existing_championship(championship_id: int, championship_data: 
             existing_championship = db.query(Championship).filter(Championship.name == championship_data.name).first()
             if existing_championship:
                 logger.error(f"Ya existe un campeonato con el nombre '{championship_data.name}'")
-                raise APIError(
-                    code=ErrorCodes.DUPLICATE_ENTRY,
-                    message="El nombre del campeonato ya está en uso",
+                raise HTTPException(
                     status_code=400,
-                    details=f"Ya existe un campeonato con el nombre '{championship_data.name}'"
+                    detail=f"Ya existe un campeonato con el nombre '{championship_data.name}'"
                 )
+        logger.info(f"Actualizando campeonato con ID {championship_id}")
 
         updated_championship = update_championship(db, championship_id, championship_data)
         logger.info(f"Campeonato '{updated_championship.name}' actualizado exitosamente")
